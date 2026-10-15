@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web Developer Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+    header, section, footer { padding: 30px 10%; }
+    nav { display: flex; justify-content: space-between; }
+    a { color: #38bdf8; text-decoration: none; }
+    .hero { padding-top: 80px; padding-bottom: 80px; }
+    h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+    .highlight { color: #38bdf8; }
+    .card {
+      background: #1e293b;
+      padding: 22px;
+      margin: 16px 0;
+      border-radius: 12px;
+    }
+    button {
+      padding: 12px 20px;
+      border: 0;
+      border-radius: 8px;
+      background: #38bdf8;
+      color: #0f172a;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer { text-align: center; color: #cbd5e1; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>My Portfolio</strong>
+      <a href="#contact">Contact me</a>
+    </nav>
+    <div class="hero">
+      <h1>Hello, I'm a <span class="highlight">Web Developer</span></h1>
+      <p>I build responsive websites using HTML, CSS and JavaScript.</p>
+      <a href="#projects"><button>View My Projects</button></a>
+    </div>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am learning web development and building practical projects.
+      I am looking for an opportunity to work remotely and grow my skills.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="card">
+      <h3>Project 1: Business Website</h3>
+      <p>A responsive website for a small business.</p>
+    </div>
+    <div class="card">
+      <h3>Project 2: To-Do App</h3>
+      <p>A JavaScript app to manage daily tasks.</p>
+    </div>
+    <div class="card">
+      <h3>Project 3: Personal Portfolio</h3>
+      <p>A website showcasing my skills and work.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: your-harbhagguraya07@@example.com</p>
+    <p>GitHub: <a href="https://github.com/">My GitHub profile</a></p>
+    <button onclick="showMessage()">Hire Me</button>
+    <p id="message"></p>
+  </section>
+
+  <footer>
+    <p>© 2026 My Portfolio | Web Developer</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "Thank you for your interest! Please contact me by email.";
+    }
+  </script>
+</body>
+</html>
